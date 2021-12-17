@@ -1,0 +1,4 @@
+displayName = AURIRI
+author = KristaLSkal
+version = 0.2
+hideCode = true
