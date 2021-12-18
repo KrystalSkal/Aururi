@@ -47,8 +47,8 @@ namespace Aururi.Items
             item.defense = 8;
             item.pick = 70;
             item.axe = 55;
-            item.width = 84;
-            item.height = 112;
+            item.width = 82;
+            item.height = 110;
             item.useTime = 21;
             item.useAnimation = 21;
             item.useStyle = 1;
@@ -88,7 +88,7 @@ namespace Aururi.Items
             recipe.AddIngredient(ItemID.MeteoriteBar, 60);
             recipe.AddIngredient(ItemID.Aglet, 1);
             recipe.AddIngredient(ItemID.Shackle, 1);
-            recipe.AddIngredient(ItemID.FallenStar, 250);
+            recipe.AddIngredient(ItemID.FallenStar, 150);
             recipe.AddIngredient(ItemID.LavaBucket, 1);
 
             recipe.AddTile(TileID.WorkBenches);

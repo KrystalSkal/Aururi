@@ -45,8 +45,8 @@ namespace Aururi.Items
             item.magic = true;
             item.accessory = true;
             item.defense = 8;
-            item.width = 84;
-            item.height = 112;
+            item.width = 134;
+            item.height = 57;
             item.useTime = 6;
             item.useAnimation = 6;
             item.useStyle = ItemUseStyleID.HoldingOut;
