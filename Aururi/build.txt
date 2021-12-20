@@ -1,4 +1,4 @@
 displayName = AURIRI
 author = KristaLSkal
-version = 0.2.3
+version = 0.2.4
 hideCode = true
