@@ -1,1 +1,23 @@
-First version
+Update 0.2.3 Time: 18.12.2021
+
+add 4 new item
+
+------------------------------------
+
+
+
+Update 0.2.2 Time: 18.12.2021
+
+add 1 new item
+
+------------------------------------
+if in single game write chat
+
+/Rate (number)     [/Rate 10] ~ all spawn rate (no player) set to 10 (standart 1, in terraria max 30, but there you can set more)
+
+
+
+Creator's 
+
+Krystal Skal
+Savarion

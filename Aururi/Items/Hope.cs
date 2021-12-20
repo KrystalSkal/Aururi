@@ -31,80 +31,59 @@ using Terraria;
 
 namespace Aururi.Items
 {
-    public class FirstBlade : ModItem
+    public class Hope : ModItem
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Power and Deffend of Fire!");
+            Tooltip.SetDefault("The power and protection of heaven is granted to you for a reason...");
         }
 
 
         public override void SetDefaults()
         {
-            item.damage = 43;
+            item.damage = 72;
             item.melee = true;
+
+            item.buffType = 58;
+            item.buffTime = 6000;
+
             item.accessory = true;
-            item.defense = 8;
+            item.defense = 14;
             item.pick = 70;
             item.axe = 55;
-            item.width = 82;
-            item.height = 110;
-            item.useTime = 21;
-            item.useAnimation = 21;
+            item.width = 48;
+            item.height = 48;
+            item.useTime = 35;
+            item.useAnimation = 35;
             item.useStyle = 1;
-            item.knockBack = 6;
-            item.value = 10000;
+            item.knockBack = 4;
+            item.value = 30000;
             item.rare = -12;
             item.UseSound = SoundID.Item1;
             item.autoReuse = true;
-            item.buffType = 116;
-            item.buffTime = 60000;
-            item.crit = 100;
-
+            item.crit = 25;        
         }
-
-
-        
-
-
 
         public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
         {
-            target.AddBuff(BuffID.OnFire, 5 * 1000);
-            target.AddBuff(BuffID.Darkness, 5 * 1000);
-            target.AddBuff(BuffID.Cursed, 5 * 1000);
-            target.AddBuff(BuffID.Frozen, 5 * 1000);
+            target.AddBuff(BuffID.Ichor, 5 * 1000);
+            target.AddBuff(BuffID.CursedInferno, 5 * 1000);
+            target.AddBuff(BuffID.Frostburn, 5 * 1000);
         }
-
-
-
-
-
-
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
 
-            recipe.AddIngredient(ItemID.MeteoriteBar, 45);
-            recipe.AddIngredient(ItemID.Aglet, 1);
-            recipe.AddIngredient(ItemID.Shackle, 1);
-            recipe.AddIngredient(ItemID.FallenStar, 100);
-            recipe.AddIngredient(ItemID.LavaBucket, 1);
+            recipe.AddIngredient(ItemID.Bone, 600);
+            recipe.AddIngredient(ItemID.AncientNecroHelmet, 1);
+            recipe.AddIngredient(ItemID.Muramasa, 1);
+            recipe.AddIngredient(ItemID.GoldenKey, 5);            
 
             recipe.AddTile(TileID.WorkBenches);
 
             recipe.SetResult(this);
             recipe.AddRecipe();
-
-
-            recipe = new ModRecipe(mod);
-
-            recipe.AddIngredient(null, "FirstBladeRange", 1);
-
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
         }
     }
 }

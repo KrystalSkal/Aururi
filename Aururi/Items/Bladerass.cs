@@ -31,36 +31,37 @@ using Terraria;
 
 namespace Aururi.Items
 {
-    public class FirstBlade : ModItem
+    public class Bladerass : ModItem
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Power and Deffend of Fire!");
+            Tooltip.SetDefault("The main thing is to choose the right fertilizers...");
         }
 
 
         public override void SetDefaults()
         {
-            item.damage = 43;
+            item.damage = 60;
             item.melee = true;
-            item.accessory = true;
-            item.defense = 8;
+            item.buffType = 113;
+            item.buffTime = 6000;
+
+            item.shoot = 181;
+            item.shootSpeed = 16f;
+
             item.pick = 70;
             item.axe = 55;
-            item.width = 82;
-            item.height = 110;
-            item.useTime = 21;
-            item.useAnimation = 21;
+            item.width = 79;
+            item.height = 79;
+            item.useTime = 12;
+            item.useAnimation = 12;
             item.useStyle = 1;
-            item.knockBack = 6;
+            item.knockBack = 8;
             item.value = 10000;
-            item.rare = -12;
+            item.rare = 2;
             item.UseSound = SoundID.Item1;
             item.autoReuse = true;
-            item.buffType = 116;
-            item.buffTime = 60000;
-            item.crit = 100;
-
+            item.crit = 31;
         }
 
 
@@ -70,10 +71,8 @@ namespace Aururi.Items
 
         public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
         {
-            target.AddBuff(BuffID.OnFire, 5 * 1000);
-            target.AddBuff(BuffID.Darkness, 5 * 1000);
-            target.AddBuff(BuffID.Cursed, 5 * 1000);
-            target.AddBuff(BuffID.Frozen, 5 * 1000);
+            target.AddBuff(BuffID.Venom, 5 * 1000);
+            target.AddBuff(BuffID.Poisoned, 5 * 1000);
         }
 
 
@@ -86,25 +85,16 @@ namespace Aururi.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
 
-            recipe.AddIngredient(ItemID.MeteoriteBar, 45);
-            recipe.AddIngredient(ItemID.Aglet, 1);
-            recipe.AddIngredient(ItemID.Shackle, 1);
-            recipe.AddIngredient(ItemID.FallenStar, 100);
-            recipe.AddIngredient(ItemID.LavaBucket, 1);
+            recipe.AddIngredient(ItemID.BeamSword, 2);
+            recipe.AddIngredient(ItemID.Stinger, 25);
+            recipe.AddIngredient(ItemID.JungleSpores, 1);
+            recipe.AddIngredient(ItemID.Vine, 50);
+            recipe.AddIngredient(ItemID.Daybloom, 5);
 
             recipe.AddTile(TileID.WorkBenches);
 
             recipe.SetResult(this);
             recipe.AddRecipe();
-
-
-            recipe = new ModRecipe(mod);
-
-            recipe.AddIngredient(null, "FirstBladeRange", 1);
-
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
         }
     }
 }

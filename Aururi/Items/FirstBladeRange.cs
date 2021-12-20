@@ -58,6 +58,8 @@ namespace Aururi.Items
             item.shoot = 34;
             item.shootSpeed = 12f;
             item.crit = 100;
+            item.buffType = 116;
+            item.buffTime = 60000;
 
         }
 
