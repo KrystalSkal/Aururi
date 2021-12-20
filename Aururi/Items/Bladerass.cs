@@ -48,9 +48,6 @@ namespace Aururi.Items
 
             item.shoot = 181;
             item.shootSpeed = 16f;
-
-            item.pick = 70;
-            item.axe = 55;
             item.width = 79;
             item.height = 79;
             item.useTime = 12;
