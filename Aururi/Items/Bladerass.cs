@@ -48,8 +48,8 @@ namespace Aururi.Items
 
             item.shoot = 181;
             item.shootSpeed = 16f;
-            item.width = 79;
-            item.height = 79;
+            item.width = 67;
+            item.height = 68;
             item.useTime = 12;
             item.useAnimation = 12;
             item.useStyle = 1;
@@ -82,11 +82,11 @@ namespace Aururi.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
 
-            recipe.AddIngredient(ItemID.BeamSword, 2);
+            recipe.AddIngredient(ItemID.BladeofGrass, 2);
             recipe.AddIngredient(ItemID.Stinger, 25);
-            recipe.AddIngredient(ItemID.JungleSpores, 1);
+            recipe.AddIngredient(ItemID.JungleSpores, 15);
             recipe.AddIngredient(ItemID.Vine, 50);
-            recipe.AddIngredient(ItemID.Daybloom, 5);
+            recipe.AddIngredient(ItemID.Obsidian, 75);
 
             recipe.AddTile(TileID.WorkBenches);
 

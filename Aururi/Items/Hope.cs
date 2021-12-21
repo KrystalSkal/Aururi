@@ -51,8 +51,8 @@ namespace Aururi.Items
             item.defense = 14;
             item.pick = 70;
             item.axe = 55;
-            item.width = 48;
-            item.height = 48;
+            item.width = 56;
+            item.height = 56;
             item.useTime = 35;
             item.useAnimation = 35;
             item.useStyle = 1;

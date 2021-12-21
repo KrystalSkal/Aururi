@@ -35,7 +35,7 @@ namespace Aururi.Items
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("You love a good fight, not not your comrades..");
+            Tooltip.SetDefault("Time for good battle..");
         }
 
 
